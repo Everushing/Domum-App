@@ -168,3 +168,26 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #ccc;
 }
+
+/* src/components/Navbar.css */
+
+.navbar-banner {
+  background-color: #ffd700; /* Yellow color */
+  padding: 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem; /* Adjust spacing between links */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #f0f0f0; /* Light gray color on hover */
+}

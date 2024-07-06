@@ -1,5 +1,9 @@
+// src/pages/PropertyDetails.tsx
+
 import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 interface Listing {
   id: number;
@@ -9,14 +13,15 @@ interface Listing {
 }
 
 const PropertyDetails: React.FC = () => {
+  const { t } = useTranslation();
+  const { id } = useParams<{ id: string }>();
   const [listing, setListing] = useState<Listing | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchListing = async () => {
       try {
-        // Replace with your actual API endpoint and API key
-        const response = await axios.get('https://api.repliers.io/listings/1', {
+        const response = await axios.get(`https://api.repliers.io/listings/${id}`, {
           headers: {
             'REPLIERS-API-KEY': '9wUqBE1RKLGIaVSM7ZOIpaxbmOPjYv',
             'Content-Type': 'application/json',
@@ -31,14 +36,14 @@ const PropertyDetails: React.FC = () => {
     };
 
     fetchListing();
-  }, []);
+  }, [id]);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>{t('propertyDetails.loading')}</div>;
   }
 
   if (!listing) {
-    return <div>Listing not found.</div>;
+    return <div>{t('propertyDetails.notFound')}</div>;
   }
 
   return (

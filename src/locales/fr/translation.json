@@ -1,0 +1,13 @@
+{
+    "navbar": {
+      "home": "Accueil",
+      "properties": "Propriétés",
+      "about": "À propos",
+      "contact": "Contact"
+    },
+    "propertyDetails": {
+      "loading": "Chargement...",
+      "notFound": "Propriété non trouvée."
+    }
+  }
+  

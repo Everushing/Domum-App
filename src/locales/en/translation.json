@@ -1,0 +1,14 @@
+
+{
+    "navbar": {
+      "home": "Home",
+      "properties": "Properties",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "propertyDetails": {
+      "loading": "Loading...",
+      "notFound": "Property not found."
+    }
+  }
+  
