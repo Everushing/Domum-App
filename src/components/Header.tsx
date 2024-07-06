@@ -1,28 +1,20 @@
+// src/components/Header.tsx
+
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-blue-500 py-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white text-2xl font-bold">
-          Domum App
-        </Link>
-        <nav>
-          <ul className="flex space-x-4">
-            <li>
-              <Link to="/" className="text-white hover:text-gray-200">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about" className="text-white hover:text-gray-200">
-                About
-              </Link>
-            </li>
-            {/* Add more navigation links as needed */}
+    <header className="bg-dark text-light py-3">
+      <div className="container d-flex justify-content-between align-items-center">
+        <h1 className="logo">Domum App</h1>
+        {/* <nav>
+          <ul className="d-flex list-unstyled m-0">
+            <li className="mx-3"><a href="/" className="text-light">Home</a></li>
+            <li className="mx-3"><a href="/properties" className="text-light">Properties</a></li>
+            <li className="mx-3"><a href="/about" className="text-light">About</a></li>
+            <li className="mx-3"><a href="/contact" className="text-light">Contact</a></li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
     </header>
   );
