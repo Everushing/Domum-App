@@ -1,31 +1,30 @@
-// src/components/Navbar.tsx
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import './Navbar.css'; // Import the CSS file
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <nav className="bg-gray-800 text-white py-4">
-      <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
-    
-        <div className="flex space-x-4">
-          <a href="/" className="hover:text-gray-300">
+    <nav className="navbar">
+      <div className="navbar-container">
+      
+        <div className="navbar-links">
+          <a href="/" className="navbar-link">
             {t('Home')}
           </a>
-          <a href="/propertydetails" className="hover:text-gray-300">
+          <a href="/propertydetails" className="navbar-link">
             {t('Properties')}
           </a>
-          <a href="/about" className="hover:text-gray-300">
+          <a href="/about" className="navbar-link">
             {t('About')}
           </a>
-          <a href="/contact" className="hover:text-gray-300">
+          <a href="/contact" className="navbar-link">
             {t('Contact')}
           </a>
-          <LanguageSwitcher />
         </div>
+        <LanguageSwitcher />
       </div>
     </nav>
   );

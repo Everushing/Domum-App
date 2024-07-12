@@ -1,23 +1,20 @@
-// src/components/Header.tsx
-
 import React from 'react';
+import './Header.css'; // Import the CSS file
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-dark text-light py-3">
-      <div className="container d-flex justify-content-between align-items-center">
-        <h1 className="logo">Domum App</h1>
-        {/* <nav>
-          <ul className="d-flex list-unstyled m-0">
-            <li className="mx-3"><a href="/" className="text-light">Home</a></li>
-            <li className="mx-3"><a href="/properties" className="text-light">Properties</a></li>
-            <li className="mx-3"><a href="/about" className="text-light">About</a></li>
-            <li className="mx-3"><a href="/contact" className="text-light">Contact</a></li>
-          </ul>
-        </nav> */}
+    <header className="header">
+      <div className="container">
+        <div className="logo">Domum Realty</div>
+        <div className="menu-icon">
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
       </div>
     </header>
   );
 };
 
 export default Header;
+

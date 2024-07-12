@@ -1,0 +1,143 @@
+/* Container styling */
+.container {
+    max-width: 768px;
+    margin: 32px auto;
+    padding: 16px;
+    /* background-color: #f8f8f8; */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #1f3c34;
+    text-align: center;
+  }
+  
+  /* Paragraph styling */
+  p {
+    color: #f1eaea;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Flexbox styling for responsive layout */
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .flex-row {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .space-y-4 {
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .space-y-4 {
+      gap: 0;
+    }
+  }
+  
+  .space-x-0 {
+    gap: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .space-x-8 {
+      gap: 32px;
+    }
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    flex: 1;
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .card {
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Heading 2 styling */
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #1f3c34;
+  }
+  
+  /* List styling */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .space-y-2 {
+    gap: 8px;
+  }
+  
+  /* Form styling */
+  label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #595959;
+  }
+  
+  input,
+  textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #3182ce;
+  }
+  
+  button {
+    background-color: #81be9f;
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  button:focus {
+    outline: none;
+    border-color: #3182ce;
+  }
+  
+  /* Ensure form elements take up full width on smaller screens */
+  @media (max-width: 767px) {
+    .form-element {
+      width: 100%;
+    }
+  }
+  

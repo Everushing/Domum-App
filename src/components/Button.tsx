@@ -1,6 +1,5 @@
-// src/components/Button.tsx
-
 import React from 'react';
+import './Button.css'; // Import the CSS file
 
 interface ButtonProps {
   label: string;
@@ -16,3 +15,4 @@ const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
 };
 
 export default Button;
+

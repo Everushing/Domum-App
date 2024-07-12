@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchBar.css'; // Import the CSS file
 
 const SearchBar: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
@@ -36,13 +37,13 @@ const SearchBar: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSearch} className="flex items-center space-x-2">
+    <form onSubmit={handleSearch} className="search-bar">
       <input
         type="text"
         placeholder="Search properties..."
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="search-input"
       />
 
       <input
@@ -50,7 +51,7 @@ const SearchBar: React.FC = () => {
         placeholder="Location"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-        className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="search-input"
       />
 
       <input
@@ -58,7 +59,7 @@ const SearchBar: React.FC = () => {
         placeholder="Bedrooms"
         value={bedrooms}
         onChange={(e) => setBedrooms(e.target.value)}
-        className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="search-input"
       />
 
       <input
@@ -66,7 +67,7 @@ const SearchBar: React.FC = () => {
         placeholder="Min Price"
         value={minPrice}
         onChange={(e) => setMinPrice(e.target.value)}
-        className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="search-input"
       />
 
       <input
@@ -74,12 +75,12 @@ const SearchBar: React.FC = () => {
         placeholder="Max Price"
         value={maxPrice}
         onChange={(e) => setMaxPrice(e.target.value)}
-        className="border border-gray-300 px-3 py-2 rounded-md focus:outline-none focus:ring focus:border-blue-300"
+        className="search-input"
       />
 
       <button
         type="submit"
-        className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+        className="search-button"
       >
         Search
       </button>
@@ -88,3 +89,4 @@ const SearchBar: React.FC = () => {
 };
 
 export default SearchBar;
+

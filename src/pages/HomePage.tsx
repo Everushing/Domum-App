@@ -1,18 +1,23 @@
-// src/pages/HomePage.tsx
-
 import React from 'react';
 import SearchBar from '../components/SearchBar';
-
+import './HomePage.css'; // Import the CSS file
 
 const HomePage: React.FC = () => {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">Welcome to Domum</h1>
-      <p className="text-gray-700 leading-relaxed mb-8">
-        Find your dream home in Abidjan with ease. Search through thousands of listings and connect with trusted agents.
-      </p>
-      <SearchBar />
-    
+    <div className="homepage-container">
+      <div className="header">
+        {/* <div className="logo">Domum Realty</div> */}
+        <div className="menu-icon"></div>
+      </div>
+      <div className="hero-image">
+        <div className="overlay-text">
+          <h1 className="overlay-title">Your way to HOME</h1>
+          <p className="overlay-description">
+            Find your dream home in Abidjan with ease. Search through thousands of listings and connect with trusted agents.
+          </p>
+          <SearchBar />
+        </div>
+      </div>
     </div>
   );
 };

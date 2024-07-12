@@ -1,6 +1,5 @@
-
 import React from 'react';
-
+import './Contact.css'; // Import the CSS file
 
 const Contact: React.FC = () => {
   return (
@@ -11,7 +10,7 @@ const Contact: React.FC = () => {
         reach out to us using the contact information below.
       </p>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-        <div className="bg-white rounded-lg shadow-md p-4 flex-1">
+        <div className="card">
           <h2 className="text-xl font-bold mb-2">Contact Information</h2>
           <ul className="space-y-2">
             <li>
@@ -25,7 +24,7 @@ const Contact: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className="bg-white rounded-lg shadow-md p-4 flex-1">
+        <div className="card">
           <h2 className="text-xl font-bold mb-2">Send us a Message</h2>
           <form className="space-y-4">
             <div>

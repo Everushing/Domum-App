@@ -1,0 +1,96 @@
+/* Container for the entire home page */
+.homepage-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header section with logo and menu icon */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #1f3c34;
+    color: #cdbda2;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .menu-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #f1e5cd;
+    border-radius: 2px;
+  }
+  
+  /* Hero image section */
+  .hero-image {
+    position: relative;
+    background: url('/public/10-Houses-in-Abidjan-11-min.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Overlay text on the hero image */
+  .overlay-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay-title {
+    font-size: 48px;
+    background-color: rgba(255, 152, 0, 0.8);
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .overlay-description {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  /* Search bar component styling */
+  .search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar input {
+    width: 100%;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 24px;
+  }
+  
+  .search-bar button {
+    background-color: #1f3c34;
+    color: #f1e5cd;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 16px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  
